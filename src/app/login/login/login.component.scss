@@ -1,0 +1,62 @@
+section#login-bg {
+  background: #f6f6f6;
+}
+.pad_img {
+  padding: 83px 0 0 0;
+}
+img.image_log {
+  width: 72%;
+}
+.bg_gre-blu {
+  background: url(../../../assets/images/Rectangl.png);
+  color: #fff;
+  height: 100vh;
+  padding: 97px 42px 42px 42px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#login-bg h4 {
+  font-size: 42px;
+  line-height: 49.22px;
+  text-align: center;
+  font-weight: 700;
+}
+#login-bg a {
+  color: #ffbb54;
+}
+button.btn-register {
+  background: #fff;
+  width: 100%;
+  color: #28a0a4;
+  font-size: 17px;
+  font-weight: 700;
+  height: 49px;
+  border-radius: 11px;
+  margin-top: 34px;
+}
+input.email_input {
+  width: 100%;
+  height: 49px;
+  border-radius: 11px;
+}
+img.img_fb {
+  background: #f1f1f1;
+  margin: 0 17px 0 17px;
+  padding: 6px;
+  border-radius: 10px;
+}
+#login-bg p {
+  font-size: 15px;
+}
+.pd {
+  padding-left: 48px;
+}
+.email_validation {
+  background: #ffffff75;
+  padding: 4px;
+  border-radius: 4px;
+  color: red;
+  font-weight: 600;
+}
