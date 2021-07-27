@@ -130,8 +130,43 @@ p.complete_dd {
 .pro_bar {
   height: 7px;
 }
-
+// dashboard serach fields
+button.dd_btn {
+  background: #fff;
+  padding: 2px 6px 2px 6px;
+  font-size: 14px;
+}
+.input_parent {
+  display: flex;
+  background: #fff;
+  border-radius: 9px;
+  padding: 4px 0 4px 8px;
+}
+input.input_search-filed {
+  border: none;
+  height: 29px;
+}
+button.btn_search {
+  padding: 0;
+}
+input.input_search-filed:focus-visible {
+  outline: none;
+}
 // progress bar colors
 .progress-bar {
   background-color: #229b9f;
+}
+
+//slick-carousel
+.slick-prev:before,
+.slick-next:before {
+  color: #229b9f;
+}
+.slick-next {
+  right: -11px;
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
 }
