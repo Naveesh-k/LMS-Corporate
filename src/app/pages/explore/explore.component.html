@@ -2,8 +2,60 @@
   class="col-md-9 float-left col px-5 px-md-3 py-3 main"
   style="background: #f6f6f6"
 >
-  <a href="#" data-target="#sidebar" data-toggle="collapse"
-    ><i class="fa fa-list text-dark"></i
-  ></a>
-  <span class="heading_dashboard"> EXPLORE</span>
+  <div class="row">
+    <div class="col-md-6">
+      <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
+        ><i class="fa fa-list text-dark"></i
+      ></a>
+      <span class="heading_dashboard">MY COURSES</span>
+    </div>
+    <div class="col-md-6 text-right">
+      <div class="dropdown">
+        <button
+          class="btn btn-light dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img
+            class="logo-head-dropdown"
+            src="../../../assets/images/profile.png"
+            alt=""
+          />
+        </button>
+        <div class="dropdown-menu drop_dn" aria-labelledby="dropdownMenuButton">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="your_dd">Your progress</p>
+              <p class="complete_dd">39% to complete</p>
+              <div class="progress pro_bar">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <hr />
+              <p class="your_dd">Registered courses</p>
+              <p class="complete_dd">10 Courses</p>
+              <hr />
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="logout_dd">Logout</p>
+                </div>
+                <div class="col-md-6 text-right">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
