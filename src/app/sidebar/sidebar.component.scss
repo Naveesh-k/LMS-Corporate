@@ -90,6 +90,12 @@ img.profile-img {
   margin: 27px 41px;
   border-radius: 25px;
   padding: 19px;
+  color: #18969a;
+  cursor: pointer;
+}
+.sidebar-bg:hover {
+  color: #fff;
+  background: #229b9f;
 }
 .border-bottom {
   border-bottom: 2px solid #56b4b7 !important;
@@ -97,10 +103,9 @@ img.profile-img {
 i.fa_width {
   font-size: 17px;
   font-weight: 600;
-  color: #18969a;
 }
 .mt_top {
-  margin-top: 71px;
+  margin-top: 10px;
 }
 .list-group-item {
   border: none;
@@ -124,4 +129,9 @@ i.fa_fa {
 }
 a.bg_color {
   color: silver;
+}
+p.name_pro {
+  font-size: 15px;
+  line-height: 21px;
+  margin-top: 19px;
 }
