@@ -9,9 +9,11 @@ import { MyCoursesComponent } from './my-courses/my-courses.component';
 // Import your library
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CoursePreviewComponent } from './course-preview/course-preview.component';
+import { SettingComponent } from './setting/setting.component';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
-  declarations: [HomeComponent, ExploreComponent, MyCoursesComponent, CoursePreviewComponent],
+  declarations: [HomeComponent, ExploreComponent, MyCoursesComponent, CoursePreviewComponent, SettingComponent, BoardComponent],
   imports: [CommonModule, PagesRoutingModule, SlickCarouselModule],
 })
 export class PagesModule {}
