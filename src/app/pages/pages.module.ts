@@ -11,9 +11,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CoursePreviewComponent } from './course-preview/course-preview.component';
 import { SettingComponent } from './setting/setting.component';
 import { BoardComponent } from './board/board.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
-  declarations: [HomeComponent, ExploreComponent, MyCoursesComponent, CoursePreviewComponent, SettingComponent, BoardComponent],
+  declarations: [HomeComponent, ExploreComponent, MyCoursesComponent, CoursePreviewComponent, SettingComponent, BoardComponent, ProfileComponent],
   imports: [CommonModule, PagesRoutingModule, SlickCarouselModule],
 })
 export class PagesModule {}
