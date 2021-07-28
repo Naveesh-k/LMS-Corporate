@@ -149,8 +149,16 @@ input.input_search-filed {
 button.btn_search {
   padding: 0;
 }
-input.input_search-filed:focus-visible {
+input:focus-visible {
   outline: none;
+}
+button.btn-n {
+  background: #229b9f;
+  color: #fff;
+  width: 100%;
+}
+button.btn-n:hover {
+  color: #fff;
 }
 // progress bar colors
 .progress-bar {
