@@ -140,11 +140,13 @@ button.dd_btn {
   display: flex;
   background: #fff;
   border-radius: 9px;
-  padding: 4px 0 4px 8px;
+  padding: 4px 7px 4px 8px;
+  justify-content: space-between;
 }
 input.input_search-filed {
   border: none;
   height: 29px;
+  width: 100%;
 }
 button.btn_search {
   padding: 0;
@@ -228,4 +230,27 @@ p.short_corse_p {
   margin: 0;
   font-size: 14px;
   font-weight: 600;
+}
+
+// header
+.hide_show {
+  display: none;
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 1024px) {
+  .hide_show {
+    display: block;
+  }
+  .show_hide {
+    display: none;
+  }
+  span.header_flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main.main {
+    padding: 1rem !important;
+  }
+  span.heading_dashboard {
+    margin: 0;
+  }
 }
