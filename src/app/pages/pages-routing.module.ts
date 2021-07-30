@@ -5,6 +5,7 @@ import { CoursePreviewComponent } from './course-preview/course-preview.componen
 import { ExploreComponent } from './explore/explore.component';
 import { HomeComponent } from './home/home.component';
 import { MyCoursesComponent } from './my-courses/my-courses.component';
+import { ProfileComponent } from './profile/profile.component';
 import { SettingComponent } from './setting/setting.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'course-preview', component: CoursePreviewComponent },
   { path: 'setting', component: SettingComponent },
   { path: 'board', component: BoardComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({

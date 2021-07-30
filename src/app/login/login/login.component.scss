@@ -60,3 +60,70 @@ img.img_fb {
   color: red;
   font-weight: 600;
 }
+// -------------
+@media screen and (min-device-width: 300px) and (max-device-width: 399px) {
+  .pd {
+    padding-left: 14px;
+    padding-top: 15px;
+  }
+  #login-bg h4 {
+    font-size: 30px;
+  }
+  .bg_gre-blu {
+    padding: 85px 12px 0px 12px;
+    height: 100vh !important;
+  }
+  button.btn-register {
+    margin-top: 0;
+  }
+  a.forget_pass_a,
+  label.forget_pass_a {
+    font-size: 15px;
+  }
+  img.or-img {
+    margin: 21px 0 0 0 !important;
+  }
+  #login-bg p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-device-width: 400px) and (max-device-width: 499px) {
+  .pd {
+    padding-left: 14px;
+    padding-top: 15px;
+  }
+  .bg_gre-blu {
+    height: 100vh !important;
+    padding: 92px 15px 31px 15px !important;
+  }
+}
+@media screen and (min-device-width: 700px) and (max-device-width: 768px) {
+  .bg_gre-blu {
+    height: 58vh;
+    padding: 69px 15px 31px 15px;
+  }
+  #login-bg h4 {
+    font-size: 24px;
+  }
+  img.img_fb {
+    width: 16%;
+  }
+  a.forget_pass_a,
+  label.forget_pass_a {
+    font-size: 12px;
+  }
+  button.btn-register {
+    margin-top: 10px;
+  }
+  #login-bg p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1024px) {
+  .bg_gre-blu {
+    height: 55vh;
+  }
+  #login-bg h4 {
+    font-size: 31px;
+  }
+}
