@@ -28,3 +28,14 @@ button.btn-wht {
   background: #fff;
   border-radius: 11px;
 }
+
+@media screen and (min-device-width: 300px) and (max-device-width: 599px) {
+  .mar_t {
+    margin: 0 0 10px 0;
+  }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 768px) {
+  .char_imgt {
+    width: 50%;
+  }
+}

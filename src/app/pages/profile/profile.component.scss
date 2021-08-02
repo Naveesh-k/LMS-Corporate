@@ -11,3 +11,33 @@ p.profile_sm span {
   padding: 10px 15px 4px 15px;
   border-radius: 21px;
 }
+
+@media screen and (min-device-width: 300px) and (max-device-width: 499px) {
+  img.img_ar {
+    width: 41% !important;
+    padding: 19px 0 0 0 !important;
+  }
+  .mar_gin {
+    margin: 14px 0 0 0;
+  }
+}
+
+@media screen and (min-device-width: 500px) and (max-device-width: 768px) {
+  h5.quick_link_h5 {
+    font-size: 18px;
+  }
+  a.is-it_a {
+    font-size: 12px;
+  }
+  .bg_sl {
+    background: #f4f4f4;
+    padding: 10px 10px 4px 10px;
+    border-radius: 21px;
+  }
+  p.profile_sm {
+    font-size: 12px;
+  }
+  small.thr_lesson_sm {
+    font-size: 10px;
+  }
+}

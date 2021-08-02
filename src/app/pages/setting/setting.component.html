@@ -1,211 +1,229 @@
-<main
-  class="col-md-9 float-left col px-5 px-md-3 py-3 main"
-  style="background: #f6f6f6"
->
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
-      <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
-        ><i class="fa fa-list text-dark"></i
-      ></a>
-      <span class="heading_dashboard">SETTINGS</span>
-    </div>
-    <div class="col-md-6 text-right">
-      <!-- <img class="logo-heaad" src="../../../assets/images/profile.png" alt="" /> -->
-
-      <div class="dropdown">
-        <button
-          class="btn btn-img dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <img
-            class="logo-head-dropdown"
-            src="../../../assets/images/profile.png"
-            alt=""
-          />
-        </button>
-        <div class="dropdown-menu drop_dn" aria-labelledby="dropdownMenuButton">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="your_dd">Your progress</p>
-              <p class="complete_dd">39% to complete</p>
-              <div class="progress pro_bar">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+    <main
+      class="col-md-12 float-left col px-5 px-md-3 py-3 main"
+      style="background: #f6f6f6"
+    >
+      <div class="row">
+        <div class="col-md-9 col-lg-9 col-sm-9 col-6">
+          <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
+            ><i class="fa fa-list text-dark show_hide"></i
+          ></a>
+          <span class="heading_dashboard">SETTINGS</span>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-6 text-right">
+          <div class="flx">
+            <div class="dropdown">
+              <button
+                class="btn btn-img dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="logo-head-dropdown"
+                  src="../../../assets/images/profile.png"
+                  alt=""
+                />
+              </button>
+              <div
+                class="dropdown-menu drop_dn"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="your_dd">Your progress</p>
+                    <p class="complete_dd">39% to complete</p>
+                    <div class="progress pro_bar">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <hr />
+                    <p class="your_dd">Registered courses</p>
+                    <p class="complete_dd">10 Courses</p>
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="logout_dd">Logout</p>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <hr />
-              <p class="your_dd">Registered courses</p>
-              <p class="complete_dd">10 Courses</p>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="logout_dd">Logout</p>
-                </div>
-                <div class="col-md-6 text-right">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </div>
+            </div>
+            <a
+              href="#"
+              data-target="#sidebar"
+              data-toggle="collapse"
+              class="pl-2 pdr"
+              ><i class="fa fa-list text-dark hide_show"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-9"></div>
+        <div class="col-md-3 text-right">
+          <div class="input_parent">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input_search-filed"
+            />
+            <button class="btn btn_search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-6">
+          <h5>Customise Your Topics</h5>
+        </div>
+        <div class="col-md-6 text-right">
+          <div class="dropdown">
+            <button
+              class="btn btn-wht dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              All
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Road To IPO</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Entrepreneurship</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Investing</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">CrowdFunding</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Capital Raising</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Trade Finance</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Business Law</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Merger & Acquisitions</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-6">
+          <h5>Request New Topic</h5>
+        </div>
+        <div class="col-md-6 text-right">
+          <div class="dropdown">
+            <button
+              class="btn btn-wht dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              All
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Road To IPO</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Entrepreneurship</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="chart">
+            <p class="road_ipo">Investing</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mar_t">
+          <div class="char_imgt">
+            <img src="../../../assets/images/Vector_plus.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-12">
+          <h5>Contact Us</h5>
+        </div>
+      </div>
+      <div class="row mt-4 pl-2">
+        <div class="col-md-12">
+          <div class="chart">
+            <div class="row">
+              <div class="col-md-10">
+                <input
+                  class="input_contact"
+                  placeholder="Your Queries"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-2">
+                <button class="btn btn-n">Send</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
-  <div class="row mt-3">
-    <div class="col-md-9"></div>
-    <div class="col-md-3 text-right">
-      <div class="input_parent">
-        <input type="text" placeholder="Search" class="input_search-filed" />
-        <button class="btn btn_search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-6">
-      <h5>Customise Your Topics</h5>
-    </div>
-    <div class="col-md-6 text-right">
-      <div class="dropdown">
-        <button
-          class="btn btn-wht dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          All
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Road To IPO</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Entrepreneurship</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Investing</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">CrowdFunding</p>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Capital Raising</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Trade Finance</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Business Law</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Merger & Acquisitions</p>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-6">
-      <h5>Request New Topic</h5>
-    </div>
-    <div class="col-md-6 text-right">
-      <div class="dropdown">
-        <button
-          class="btn btn-wht dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          All
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Road To IPO</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Entrepreneurship</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="chart">
-        <p class="road_ipo">Investing</p>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="char_imgt">
-        <img src="../../../assets/images/Vector_plus.png" alt="" />
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-12">
-      <h5>Contact Us</h5>
-    </div>
-  </div>
-  <div class="row mt-4 pl-2">
-    <div class="col-md-12">
-      <div class="chart">
-        <div class="row">
-          <div class="col-md-10">
-            <input
-              class="input_contact"
-              placeholder="Your Queries"
-              type="text"
-            />
-          </div>
-          <div class="col-md-2">
-            <button class="btn btn-n">Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+</div>

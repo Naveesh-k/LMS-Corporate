@@ -113,7 +113,8 @@ img.logo-head-dropdown {
 .drop_dn {
   padding: 19px;
   border-radius: 19px;
-  transform: translate3d(203px, 41px, 0px) !important;
+  // transform: translate3d(203px, 41px, 0px) !important;
+  transform: translate3d(-71px, 48px, 0px) !important;
   width: 58% !important;
 }
 p.your_dd {
@@ -236,6 +237,10 @@ p.short_corse_p {
 .hide_show {
   display: none;
 }
+.flx {
+  display: flex;
+  justify-content: flex-end;
+}
 @media screen and (min-device-width: 300px) and (max-device-width: 1024px) {
   .hide_show {
     display: block;
@@ -252,5 +257,22 @@ p.short_corse_p {
   }
   span.heading_dashboard {
     margin: 0;
+    font-size: 18px;
   }
+
+  .dropdown {
+    margin: 0 0 0 27px;
+  }
+  a.pdr {
+    padding: 17px 0 0 0;
+  }
+
+  // --------
+  .slide-1 {
+    width: 153px !important;
+  }
+  img.slick-img {
+    width: 143px;
+  }
+  // --------
 }
