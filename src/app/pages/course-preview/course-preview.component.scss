@@ -44,3 +44,9 @@ a.begin_btn {
   background: #28a0a4;
   color: #fff;
 }
+
+@media screen and (min-device-width: 300px) and (max-device-width: 499px) {
+  .mar_t {
+    margin: 10px 0;
+  }
+}
