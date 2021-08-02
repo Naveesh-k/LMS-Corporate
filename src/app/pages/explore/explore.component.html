@@ -1,208 +1,280 @@
-<main
-  class="col-md-9 float-left col px-5 px-md-3 py-3 main"
-  style="background: #f6f6f6"
->
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
-      <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
-        ><i class="fa fa-list text-dark"></i
-      ></a>
-      <span class="heading_dashboard">MY COURSES</span>
-    </div>
-    <div class="col-md-6 text-right">
-      <div class="dropdown">
-        <button
-          class="btn btn-img dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <img
-            class="logo-head-dropdown"
-            src="../../../assets/images/profile.png"
-            alt=""
-          />
-        </button>
-        <div class="dropdown-menu drop_dn" aria-labelledby="dropdownMenuButton">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="your_dd">Your progress</p>
-              <p class="complete_dd">39% to complete</p>
-              <div class="progress pro_bar">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <hr />
-              <p class="your_dd">Registered courses</p>
-              <p class="complete_dd">10 Courses</p>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="logout_dd">Logout</p>
-                </div>
-                <div class="col-md-6 text-right">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main
+      class="col-md-12 float-left col px-5 px-md-3 py-3 main"
+      style="background: #f6f6f6"
+    >
+      <div class="row">
+        <div class="col-md-9 col-lg-9 col-sm-9 col-6">
+          <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
+            ><i class="fa fa-list text-dark show_hide"></i
+          ></a>
+          <span class="heading_dashboard">EXPLORE</span>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col-md-6 pl-4" *ngIf="hide">
-      <h4><u> Top Categories </u></h4>
-    </div>
-    <div class="col-md-6 pl-4" *ngIf="!hide">
-      <h4><u> Search Results </u></h4>
-    </div>
-    <div class="col-md-3"></div>
-    <div class="col-md-3 text-right pr-4">
-      <div class="input_parent">
-        <input type="text" placeholder="Search" class="input_search-filed" />
-        <button class="btn btn_search" (click)="showHide()">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div *ngIf="hide">
-    <div class="row mt-3">
-      <div class="col-md-12 pl-4">
-        <ngx-slick-carousel
-          class="carousel"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-        >
-          <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%" />
-        </div> -->
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 71.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Mastering Capital Wisdom</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 72.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 73.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Coinbase's Insane IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 74.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Alibaba IPO: Stock</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 71.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-        </ngx-slick-carousel>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-md-12 pl-4">
-        <h4><u> Top Courses </u></h4>
-        <h6 class="top_course">
-          Top courses that people in your industry are taking
-        </h6>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-md-12 pl-4">
-        <ngx-slick-carousel
-          class="carousel"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-        >
-          <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%" />
-        </div> -->
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 75.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Mastering Capital Wisdom</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 76.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 77.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Coinbase's Insane IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 78.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Alibaba IPO: Stock</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 71.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-        </ngx-slick-carousel>
-      </div>
-    </div>
-  </div>
-
-  <div *ngIf="!hide">
-    <div class="row mt-3">
-      <div class="col-md-12 pl-4">
-        <h6>Displaying 1 Result for Mastering Capital Wisdom</h6>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-md-4 pl-4">
-        <div class="card_detail">
-          <div class="row">
-            <div class="col-md-12">
-              <img
-                class="pif_img"
-                src="../../../assets/images/PIF.png"
-                alt=""
-              />
-              <div class="px-2 py-1">
-                <p class="master_p">MASTERING CAPITAL WISDOM</p>
-                <p class="capital_p">CAPITAL AWAKENING</p>
-                <hr />
-                <p class="short_corse_p">SHORT COURSE</p>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-6 text-right">
+          <div class="flx">
+            <div class="dropdown">
+              <button
+                class="btn btn-img dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="logo-head-dropdown"
+                  src="../../../assets/images/profile.png"
+                  alt=""
+                />
+              </button>
+              <div
+                class="dropdown-menu drop_dn"
+                aria-labelledby="dropdownMenuButton"
+              >
                 <div class="row">
-                  <div class="col-md-4">
-                    <small class="thr_lesson_sm">3 lessons</small>
-                  </div>
-                  <div class="col-md-8 text-left">
-                    <small class="thr_lesson_sm">1 : 13 hours</small>
+                  <div class="col-md-12">
+                    <p class="your_dd">Your progress</p>
+                    <p class="complete_dd">39% to complete</p>
+                    <div class="progress pro_bar">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <hr />
+                    <p class="your_dd">Registered courses</p>
+                    <p class="complete_dd">10 Courses</p>
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="logout_dd">Logout</p>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <p class="lorem_sm">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry’s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. Copy
-                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              data-target="#sidebar"
+              data-toggle="collapse"
+              class="pl-2 pdr"
+              ><i class="fa fa-list text-dark hide_show"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6 pl-4" *ngIf="hide">
+          <h4><u> Top Categories </u></h4>
+        </div>
+        <div class="col-md-6 pl-4" *ngIf="!hide">
+          <h4><u> Search Results </u></h4>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-right pr-4">
+          <div class="input_parent">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input_search-filed"
+            />
+            <button class="btn btn_search" (click)="showHide()">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="hide">
+        <div class="row mt-3">
+          <div class="col-md-12 pl-4">
+            <ngx-slick-carousel
+              class="carousel"
+              #slickModal="slick-carousel"
+              [config]="slideConfig"
+            >
+              <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%" />
+        </div> -->
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 71.png"
+                  alt=""
+                />
+                <h6 class="pt-3 mast_h6 font-weight-bold">
+                  Mastering Capital Wisdom
+                </h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 72.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">Road To IPO</h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 73.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">
+                  Coinbase's Insane IPO
+                </h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 74.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">
+                  Alibaba IPO: Stock
+                </h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 71.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">Road To IPO</h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+            </ngx-slick-carousel>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12 pl-4">
+            <h4><u> Top Courses </u></h4>
+            <h6 class="top_course">
+              Top courses that people in your industry are taking
+            </h6>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 pl-4">
+            <ngx-slick-carousel
+              class="carousel"
+              #slickModal="slick-carousel"
+              [config]="slideConfig"
+            >
+              <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%" />
+        </div> -->
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 75.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">
+                  Mastering Capital Wisdom
+                </h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 76.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">Road To IPO</h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 77.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">
+                  Coinbase's Insane IPO
+                </h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 78.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">
+                  Alibaba IPO: Stock
+                </h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 71.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold mast_h6">Road To IPO</h6>
+                <small class="pre_par_sm">Preparation</small>
+              </div>
+            </ngx-slick-carousel>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="!hide">
+        <div class="row mt-3">
+          <div class="col-md-12 pl-4">
+            <h6>Displaying 1 Result for Mastering Capital Wisdom</h6>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4 pl-4">
+            <div class="card_detail">
+              <div class="row">
+                <div class="col-md-12">
+                  <img
+                    class="pif_img"
+                    src="../../../assets/images/PIF.png"
+                    alt=""
+                  />
+                  <div class="px-2 py-1">
+                    <p class="master_p">MASTERING CAPITAL WISDOM</p>
+                    <p class="capital_p">CAPITAL AWAKENING</p>
+                    <hr />
+                    <p class="short_corse_p">SHORT COURSE</p>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <small class="thr_lesson_sm">3 lessons</small>
+                      </div>
+                      <div class="col-md-8 text-left">
+                        <small class="thr_lesson_sm">1 : 13 hours</small>
+                      </div>
+                    </div>
+                    <p class="lorem_sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry’s
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. Copy
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
-</main>
+</div>

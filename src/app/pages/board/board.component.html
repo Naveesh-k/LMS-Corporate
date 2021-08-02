@@ -1,323 +1,369 @@
-<main
-  class="col-md-9 float-left col px-5 px-md-3 py-3 main"
-  style="background: #f6f6f6"
->
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
-      <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
-        ><i class="fa fa-list text-dark"></i
-      ></a>
-      <span class="heading_dashboard">SETTINGS</span>
-    </div>
-    <div class="col-md-6 text-right">
-      <!-- <img class="logo-heaad" src="../../../assets/images/profile.png" alt="" /> -->
-
-      <div class="dropdown">
-        <button
-          class="btn btn-img dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <img
-            class="logo-head-dropdown"
-            src="../../../assets/images/profile.png"
-            alt=""
-          />
-        </button>
-        <div class="dropdown-menu drop_dn" aria-labelledby="dropdownMenuButton">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="your_dd">Your progress</p>
-              <p class="complete_dd">39% to complete</p>
-              <div class="progress pro_bar">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <hr />
-              <p class="your_dd">Registered courses</p>
-              <p class="complete_dd">10 Courses</p>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="logout_dd">Logout</p>
-                </div>
-                <div class="col-md-6 text-right">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+    <main
+      class="col-md-12 float-left col px-5 px-md-3 py-3 main"
+      style="background: #f6f6f6"
+    >
+      <div class="row">
+        <div class="col-md-9 col-lg-9 col-sm-9 col-6">
+          <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
+            ><i class="fa fa-list text-dark show_hide"></i
+          ></a>
+          <span class="heading_dashboard">BOARD</span>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-6 text-right">
+          <div class="flx">
+            <div class="dropdown">
+              <button
+                class="btn btn-img dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="logo-head-dropdown"
+                  src="../../../assets/images/profile.png"
+                  alt=""
+                />
+              </button>
+              <div
+                class="dropdown-menu drop_dn"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="your_dd">Your progress</p>
+                    <p class="complete_dd">39% to complete</p>
+                    <div class="progress pro_bar">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <hr />
+                    <p class="your_dd">Registered courses</p>
+                    <p class="complete_dd">10 Courses</p>
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="logout_dd">Logout</p>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <a
+              href="#"
+              data-target="#sidebar"
+              data-toggle="collapse"
+              class="pl-2 pdr"
+              ><i class="fa fa-list text-dark hide_show"></i
+            ></a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="row mt-3 pl-2">
-    <div class="col-md-9">
-      <p class="browser_p" *ngIf="!hide">
-        Browse the most recent Course that match your skills and profile
-        description.
-      </p>
-    </div>
-    <div class="col-md-3 text-right">
-      <div class="input_parent">
-        <input type="text" placeholder="Search" class="input_search-filed" />
-        <button class="btn btn_search" (click)="hideShow()">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div *ngIf="!hide">
-    <div class="row mt-3 pl-3 pr-2">
-      <div class="col-md-12">
-        <ngx-slick-carousel
-          class="carousel"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-        >
-          <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <div class="row mt-3 pl-2">
+        <div class="col-md-9">
+          <p class="browser_p" *ngIf="!hide">
+            Browse the most recent Course that match your skills and profile
+            description.
+          </p>
+        </div>
+        <div class="col-md-3 text-right">
+          <div class="input_parent">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input_search-filed"
+            />
+            <button class="btn btn_search" (click)="hideShow()">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="!hide">
+        <div class="row mt-3 pl-3 pr-2">
+          <div class="col-md-12">
+            <ngx-slick-carousel
+              class="carousel"
+              #slickModal="slick-carousel"
+              [config]="slideConfig"
+            >
+              <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide">
         <img src="{{ slide.img }}" alt="" width="100%" />
       </div> -->
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 71.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Mastering Capital Wisdom</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 72.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 73.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Coinbase's Insane IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 74.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Alibaba IPO: Stock</h6>
-            <small class="">Preparation</small>
-          </div>
-          <div ngxSlickItem class="slide-1">
-            <img src="../../../assets/images/Rectangle 71.png" alt="" />
-            <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
-            <small class="">Preparation</small>
-          </div>
-        </ngx-slick-carousel>
-      </div>
-    </div>
-    <div class="row mt-3 pl-2 pr-2">
-      <div class="col-md-12">
-        <div class="bg_wh">
-          <h4>Most Recent For You</h4>
-          <hr />
-          <div class="row">
-            <div class="col-md-6 pr-4">
-              <div class="row">
-                <div class="col-md-7">
-                  <p class="master_p">Mastering Capital Wisdom</p>
-                  <small class="capital_awak">CAPITAL AWAKENING</small>
-                </div>
-                <div class="col-md-5 text-right">
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 71.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold">Mastering Capital Wisdom</h6>
+                <small class="">Preparation</small>
               </div>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <small class="short_cours">SHORT COURSE</small>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <small class="thr_lesson_sm">3 lessons</small>
-                    </div>
-                    <div class="col-md-8 text-left">
-                      <small class="thr_lesson_sm">1 : 13 hours</small>
-                    </div>
-                  </div>
-                </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 72.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
+                <small class="">Preparation</small>
               </div>
-              <p class="lorem_sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-            <div class="col-md-6 pl-4">
-              <div class="row">
-                <div class="col-md-7">
-                  <p class="master_p">Alibaba IPO: Stock surges 38%..</p>
-                  <small class="capital_awak">CAPITAL AWAKENING</small>
-                </div>
-                <div class="col-md-5 text-right">
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 73.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold">Coinbase's Insane IPO</h6>
+                <small class="">Preparation</small>
               </div>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <small class="short_cours">SHORT COURSE</small>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <small class="thr_lesson_sm">3 lessons</small>
-                    </div>
-                    <div class="col-md-8 text-left">
-                      <small class="thr_lesson_sm">1 : 13 hours</small>
-                    </div>
-                  </div>
-                </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 74.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold">Alibaba IPO: Stock</h6>
+                <small class="">Preparation</small>
               </div>
-              <p class="lorem_sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md-6 pr-4">
-              <div class="row">
-                <div class="col-md-7">
-                  <p class="master_p">Coinbase's Insane IPO</p>
-                  <small class="capital_awak">CAPITAL AWAKENING</small>
-                </div>
-                <div class="col-md-5 text-right">
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                </div>
+              <div ngxSlickItem class="slide-1">
+                <img
+                  class="slick-img"
+                  src="../../../assets/images/Rectangle 71.png"
+                  alt=""
+                />
+                <h6 class="pt-3 font-weight-bold">Road To IPO</h6>
+                <small class="">Preparation</small>
               </div>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <small class="short_cours">SHORT COURSE</small>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <small class="thr_lesson_sm">3 lessons</small>
-                    </div>
-                    <div class="col-md-8 text-left">
-                      <small class="thr_lesson_sm">1 : 13 hours</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="lorem_sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-            <div class="col-md-6 pl-4">
-              <div class="row">
-                <div class="col-md-7">
-                  <p class="master_p">Road To IPO</p>
-                  <small class="capital_awak">CAPITAL AWAKENING</small>
-                </div>
-                <div class="col-md-5 text-right">
-                  <i class="fa fa-share-alt" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
-                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                </div>
-              </div>
-              <hr />
-              <div class="row">
-                <div class="col-md-6">
-                  <small class="short_cours">SHORT COURSE</small>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <small class="thr_lesson_sm">3 lessons</small>
-                    </div>
-                    <div class="col-md-8 text-left">
-                      <small class="thr_lesson_sm">1 : 13 hours</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="lorem_sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
+            </ngx-slick-carousel>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="row mt-3 pl-2 pr-2">
+          <div class="col-md-12">
+            <div class="bg_wh">
+              <h4>Most Recent For You</h4>
+              <hr />
+              <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-12 pr-4">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <p class="master_p">Mastering Capital Wisdom</p>
+                      <small class="capital_awak">CAPITAL AWAKENING</small>
+                    </div>
+                    <div class="col-md-5 text-right">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <small class="short_cours">SHORT COURSE</small>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <small class="thr_lesson_sm">3 lessons</small>
+                        </div>
+                        <div class="col-md-8 text-left">
+                          <small class="thr_lesson_sm">1 : 13 hours</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="lorem_sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry’s
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-12 pl-4">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <p class="master_p">Alibaba IPO: Stock surges 38%..</p>
+                      <small class="capital_awak">CAPITAL AWAKENING</small>
+                    </div>
+                    <div class="col-md-5 text-right">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <small class="short_cours">SHORT COURSE</small>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <small class="thr_lesson_sm">3 lessons</small>
+                        </div>
+                        <div class="col-md-8 text-left">
+                          <small class="thr_lesson_sm">1 : 13 hours</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="lorem_sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry’s
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                </div>
+              </div>
 
-  <div *ngIf="hide">
-    <div class="row mt-4">
-      <div class="col-md-12">
-        <div class="wht-spc">
-          <h5 class="">Mastering Capital Wisdom</h5>
-          <small class="text-secondary">Posted 15 hours ago</small>
-          <hr />
-          <small class="short_cour">SHORT COURSE</small>
-          <div class="row">
-            <div class="col-md-1">
-              <small class="thr_lesson_sm">3 lessons</small>
-            </div>
-            <div class="col-md-11 text-left">
-              <small class="thr_lesson_sm">1 : 13 hours</small>
-            </div>
-          </div>
-          <p class="lorem_sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry’s standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a
-            type specimen book.
-          </p>
-          <hr />
-          <p class="lorem_sm"><span>Course Type:</span> One-time</p>
-          <p class="lorem_sm"><span>Skills and Expertise</span></p>
-          <div class="row">
-            <div class="col-md-2">
-              <a class="a_btn" href="#">Road To IPO</a>
-            </div>
-            <div class="col-md-2">
-              <a class="a_btn" href="#">Entrepreneurship</a>
-            </div>
-            <div class="col-md-2">
-              <a class="a_btn" href="#">Trade Finance</a>
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col-md-4">
-              <button class="btn btn-n">Request to courses</button>
-            </div>
-            <div class="col-md-4">
-              <button class="btn w-100 btn-outline-dark">Save courses</button>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-md-12">
-              <h5>Upgrade your membership to see the courses</h5>
+              <div class="row mt-3">
+                <div class="col-md-6 pr-4">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <p class="master_p">Coinbase's Insane IPO</p>
+                      <small class="capital_awak">CAPITAL AWAKENING</small>
+                    </div>
+                    <div class="col-md-5 text-right">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <small class="short_cours">SHORT COURSE</small>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <small class="thr_lesson_sm">3 lessons</small>
+                        </div>
+                        <div class="col-md-8 text-left">
+                          <small class="thr_lesson_sm">1 : 13 hours</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="lorem_sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry’s
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                </div>
+                <div class="col-md-6 pl-4">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <p class="master_p">Road To IPO</p>
+                      <small class="capital_awak">CAPITAL AWAKENING</small>
+                    </div>
+                    <div class="col-md-5 text-right">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-up px-4" aria-hidden="true"></i>
+                      <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <small class="short_cours">SHORT COURSE</small>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <small class="thr_lesson_sm">3 lessons</small>
+                        </div>
+                        <div class="col-md-8 text-left">
+                          <small class="thr_lesson_sm">1 : 13 hours</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="lorem_sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry’s
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div *ngIf="hide">
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="wht-spc">
+              <h5 class="">Mastering Capital Wisdom</h5>
+              <small class="text-secondary">Posted 15 hours ago</small>
+              <hr />
+              <small class="short_cour">SHORT COURSE</small>
+              <div class="row">
+                <div class="col-md-1">
+                  <small class="thr_lesson_sm">3 lessons</small>
+                </div>
+                <div class="col-md-11 text-left">
+                  <small class="thr_lesson_sm">1 : 13 hours</small>
+                </div>
+              </div>
+              <p class="lorem_sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. Lorem
+                Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <hr />
+              <p class="lorem_sm"><span>Course Type:</span> One-time</p>
+              <p class="lorem_sm"><span>Skills and Expertise</span></p>
+              <div class="row">
+                <div class="col-md-2">
+                  <a class="a_btn" href="#">Road To IPO</a>
+                </div>
+                <div class="col-md-2">
+                  <a class="a_btn" href="#">Entrepreneurship</a>
+                </div>
+                <div class="col-md-2">
+                  <a class="a_btn" href="#">Trade Finance</a>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-4">
+                  <button class="btn btn-n">Request to courses</button>
+                </div>
+                <div class="col-md-4">
+                  <button class="btn w-100 btn-outline-dark">
+                    Save courses
+                  </button>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <h5>Upgrade your membership to see the courses</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
-</main>
+</div>
