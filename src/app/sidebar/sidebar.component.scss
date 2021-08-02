@@ -111,13 +111,16 @@ i.fa_width {
   border: none;
   padding: 16px 72px;
 }
-a.bg_color:focus-within {
+.active {
   background: #229b9f;
-  margin: 0 45px;
+  margin: 12px 45px;
   text-align: left;
-  color: #fff;
+  color: #fff !important;
   padding: 16px 30px;
   border-radius: 14px !important;
+}
+.active > i.fa_fa {
+  color: #fff;
 }
 span.heading_dashboard {
   font-size: 20px;
