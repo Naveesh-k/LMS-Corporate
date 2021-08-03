@@ -1,7 +1,31 @@
 :root {
-  --primary-bg-color: #424242;
-  --secondary-bg-color: #000000;
-  --input-bg-color: #ffffff;
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #000000;
+  --dark-primary-bg-color: #424242;
+  --dark-primary-card-bg-color: #1b1c1e;
+  --dark-secondary-bg-color: #000000;
+  --dark-input-bg-color: #ffffff;
+  --dark-primary-text-color: #ffffff;
+  --dark-secondary-text-color: #000000;
+}
+.dark-bg {
+  background: var(--dark-primary-bg-color);
+  color: var(--dark-input-bg-color);
+}
+.dark-bg-col {
+  background: var(--dark-secondary-bg-color);
+  color: var(--dark-input-bg-color);
+}
+.dark-text {
+  color: var(--dark-input-bg-color);
+}
+.dark-card-bg {
+  background: var(--dark-primary-card-bg-color);
+  color: var(--dark-input-bg-color);
+}
+
+.dark-nest-card-bg {
+  background: var(--dark-secondary-bg-color);
+}
+.dark-side-bar-text {
+  background: var(--dark-secondary-text-color);
+  color: var(--dark-primary-text-color);
 }

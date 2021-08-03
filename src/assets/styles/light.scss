@@ -1,7 +1,31 @@
 :root {
-  --primary-bg-color: #f6f6f6;
-  --secondary-bg-color: #ffffff;
-  --input-bg-color: #f6f6f6;
-  --primary-text-color: #000000;
-  --secondary-text-color: #ffffff;
+  --light-primary-bg-color: #f6f6f6;
+  --light-secondary-bg-color: #ffffff;
+  --light-third-bg-color: #f9f9f9;
+  --light-input-bg-color: #f6f6f6;
+  --light-primary-text-color: #000000;
+  --light-secondary-text-color: #ffffff;
+  --light-side-bar-text-color: #c0c0c0;
+}
+.light-bg {
+  background: var(--light-primary-bg-color);
+  color: var(--light-primary-text-color);
+}
+.light-bg-col {
+  background: var(--light-secondary-bg-color);
+  color: var(--light-side-bar-text-color);
+}
+.light-text {
+  text: var(--light-primary-text-color);
+}
+.light-card-bg {
+  background: var(--light-secondary-bg-color);
+  color: var(--light-primary-text-color);
+}
+.light-nest-card-bg {
+  background: var(--light-third-bg-color);
+}
+.light-side-bar-text {
+  background: var(--light-secondary-bg-color);
+  color: var(--light-side-bar-text-color);
 }

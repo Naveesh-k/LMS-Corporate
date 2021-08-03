@@ -2,76 +2,9 @@
   <div class="row">
     <main
       class="col-md-12 float-left col px-5 px-md-3 py-3 main"
-      style="background: #f6f6f6"
+      [ngClass]="darkMode ? 'dark-bg' : 'light-bg'"
     >
-      <div class="row">
-        <div class="col-md-9 col-lg-9 col-sm-9 col-6">
-          <a href="#" data-target="#sidebar" data-toggle="collapse" class="pl-2"
-            ><i class="fa fa-list text-dark show_hide"></i
-          ></a>
-          <span class="heading_dashboard">BOARD</span>
-        </div>
-        <div class="col-md-3 col-lg-3 col-sm-3 col-6 text-right">
-          <div class="flx">
-            <div class="dropdown">
-              <button
-                class="btn btn-img dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  class="logo-head-dropdown"
-                  src="../../../assets/images/profile.png"
-                  alt=""
-                />
-              </button>
-              <div
-                class="dropdown-menu drop_dn"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <div class="row">
-                  <div class="col-md-12">
-                    <p class="your_dd">Your progress</p>
-                    <p class="complete_dd">39% to complete</p>
-                    <div class="progress pro_bar">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 50%"
-                        aria-valuenow="50"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <hr />
-                    <p class="your_dd">Registered courses</p>
-                    <p class="complete_dd">10 Courses</p>
-                    <hr />
-                    <div class="row">
-                      <div class="col-md-6 col-6">
-                        <p class="logout_dd">Logout</p>
-                      </div>
-                      <div class="col-md-6 col-6 text-right">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              href="#"
-              data-target="#sidebar"
-              data-toggle="collapse"
-              class="pl-2 pdr"
-              ><i class="fa fa-list text-dark hide_show"></i
-            ></a>
-          </div>
-        </div>
-      </div>
+      <app-common-header></app-common-header>
 
       <div class="row mt-3 pl-2">
         <div class="col-md-9">
@@ -81,14 +14,22 @@
           </p>
         </div>
         <div class="col-md-3 text-right">
-          <div class="input_parent">
+          <div
+            class="input_parent"
+            [ngClass]="darkMode ? 'dark-card-bg' : 'light-card-bg'"
+          >
             <input
+              [ngClass]="darkMode ? 'dark-card-bg' : 'light-card-bg'"
               type="text"
               placeholder="Search"
               class="input_search-filed"
             />
             <button class="btn btn_search" (click)="hideShow()">
-              <i class="fa fa-search" aria-hidden="true"></i>
+              <i
+                class="fa fa-search"
+                [ngClass]="darkMode ? 'dark-text' : 'light-text'"
+                aria-hidden="true"
+              ></i>
             </button>
           </div>
         </div>
@@ -161,7 +102,10 @@
         </div>
         <div class="row mt-3 pl-2 pr-2">
           <div class="col-md-12">
-            <div class="bg_wh">
+            <div
+              class="bg_wh"
+              [ngClass]="darkMode ? 'dark-card-bg' : 'light-card-bg'"
+            >
               <h4>Most Recent For You</h4>
               <hr />
               <div class="row">
@@ -313,7 +257,10 @@
       <div *ngIf="hide">
         <div class="row mt-4">
           <div class="col-md-12">
-            <div class="wht-spc">
+            <div
+              class="wht-spc"
+              [ngClass]="darkMode ? 'dark-card-bg' : 'light-card-bg'"
+            >
               <h5 class="master_h5">Mastering Capital Wisdom</h5>
               <small class="text-secondary">Posted 15 hours ago</small>
               <hr />

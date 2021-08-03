@@ -12,9 +12,20 @@ import { CoursePreviewComponent } from './course-preview/course-preview.componen
 import { SettingComponent } from './setting/setting.component';
 import { BoardComponent } from './board/board.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FormsModule } from '@angular/forms';
+import { CommonHeaderComponent } from './common-header/common-header.component';
 
 @NgModule({
-  declarations: [HomeComponent, ExploreComponent, MyCoursesComponent, CoursePreviewComponent, SettingComponent, BoardComponent, ProfileComponent],
-  imports: [CommonModule, PagesRoutingModule, SlickCarouselModule],
+  declarations: [
+    HomeComponent,
+    ExploreComponent,
+    MyCoursesComponent,
+    CoursePreviewComponent,
+    SettingComponent,
+    BoardComponent,
+    ProfileComponent,
+    CommonHeaderComponent,
+  ],
+  imports: [CommonModule, PagesRoutingModule, SlickCarouselModule, FormsModule],
 })
 export class PagesModule {}
