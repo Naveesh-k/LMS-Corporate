@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorModeService } from 'src/app/service/color-mode.service';
 
 @Component({
   selector: 'app-explore',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExploreComponent implements OnInit {
   hide: boolean = true;
-  constructor() {}
+  darkMode: boolean = false;
+  constructor(
+    public mode: ColorModeService // dark-light
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // dark-light
+    this.mode.currentMode.subscribe((res) => {
+      if (res == 'light') {
+        this.darkMode = false;
+      } else {
+        this.darkMode = true;
+      }
+    });
+    //end dark-light
+  }
 
   // slider
   slideConfig = { slidesToShow: 4, slidesToScroll: 4 };

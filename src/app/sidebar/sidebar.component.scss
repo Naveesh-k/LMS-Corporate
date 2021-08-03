@@ -4,7 +4,7 @@
 }
 #sidebar .list-group {
   min-width: 300px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #sidebar .list-group-item {
@@ -86,7 +86,7 @@ img.profile-img {
 }
 .sidebar-bg {
   text-align: center;
-  background: #f6f6f6;
+  // background: #f6f6f6;
   margin: 27px 41px;
   border-radius: 25px;
   padding: 19px;

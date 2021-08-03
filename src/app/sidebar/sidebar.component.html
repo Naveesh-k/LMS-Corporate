@@ -1,5 +1,8 @@
 <div class="container-fluid">
-  <div class="row d-flex d-md-block flex-nowrap wrapper">
+  <div
+    class="row d-flex d-md-block flex-nowrap wrapper main_clr"
+    [ngClass]="darkMode ? 'dark-bg' : 'light-bg'"
+  >
     <div
       class="
         col-md-3 col-lg-3 col-sm-6 col-12
@@ -13,7 +16,10 @@
       "
       id="sidebar"
     >
-      <div class="list-group border-0 card bg-faded text-center text-md-left">
+      <div
+        class="list-group border-0 card text-center text-md-left"
+        [ngClass]="darkMode ? 'dark-bg-col' : 'light-bg-col'"
+      >
         <div class="border-bottom">
           <img
             class="side-bar-logo text-center"
@@ -23,6 +29,7 @@
         </div>
 
         <div
+          [ngClass]="darkMode ? 'dark-bg' : 'light-bg'"
           id="side_bar"
           class="sidebar-bg text-center"
           [routerLink]="'/pages/profile'"
@@ -116,6 +123,7 @@
           <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
         </div> -->
         <a
+          [ngClass]="darkMode ? 'dark-side-bar-text' : 'light-side-bar-text'"
           [routerLink]="'/pages/home'"
           routerLinkActive="router-link-active active"
           class="list-group-item d-inline-block collapsed bg_color"
@@ -125,6 +133,7 @@
           <i class="fa fa_fa fa-caret-right text-white pl-5"></i>
         </a>
         <a
+          [ngClass]="darkMode ? 'dark-side-bar-text' : 'light-side-bar-text'"
           [routerLink]="'/pages/my-course'"
           routerLinkActive="router-link-active active"
           class="list-group-item d-inline-block collapsed bg_color"
@@ -135,6 +144,7 @@
           <i class="fa fa_fa fa-caret-right text-white pl-5"></i>
         </a>
         <a
+          [ngClass]="darkMode ? 'dark-side-bar-text' : 'light-side-bar-text'"
           [routerLink]="'/pages/explore'"
           routerLinkActive="router-link-active active"
           class="list-group-item d-inline-block collapsed bg_color"
@@ -144,6 +154,7 @@
           <i class="fa fa_fa fa-caret-right text-white pl-5"></i
         ></a>
         <a
+          [ngClass]="darkMode ? 'dark-side-bar-text' : 'light-side-bar-text'"
           [routerLink]="'/pages/board'"
           routerLinkActive="router-link-active active"
           class="list-group-item d-inline-block collapsed bg_color"
@@ -153,6 +164,7 @@
           <i class="fa fa_fa fa-caret-right text-white pl-5"></i
         ></a>
         <a
+          [ngClass]="darkMode ? 'dark-side-bar-text' : 'light-side-bar-text'"
           [routerLink]="'/pages/setting'"
           routerLinkActive="router-link-active active"
           class="list-group-item d-inline-block collapsed bg_color"

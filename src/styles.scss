@@ -1,3 +1,5 @@
+@import "./assets/styles/dark.scss"; // dark-light
+@import "./assets/styles/light.scss"; // dark-light
 // Login
 section#dashboard-bg {
   background: url(./assets/images/login-img.png);
@@ -6,6 +8,9 @@ section#dashboard-bg {
   height: 586px;
   padding: 0 0 45px 24px;
   border-top: 1px solid #fff;
+}
+a {
+  color: #000;
 }
 .mar_top {
   margin-top: 69px;
@@ -133,13 +138,13 @@ p.complete_dd {
 }
 // dashboard serach fields
 button.dd_btn {
-  background: #fff;
+  // background: #fff;
   padding: 2px 6px 2px 6px;
   font-size: 14px;
 }
 .input_parent {
   display: flex;
-  background: #fff;
+  // background: #fff;
   border-radius: 9px;
   padding: 4px 7px 4px 8px;
   justify-content: space-between;
@@ -182,7 +187,7 @@ button.btn-n:hover {
   box-shadow: none;
 }
 .wht-spc {
-  background: #fff;
+  // background: #fff;
   padding: 31px;
   border-radius: 11px;
 }
@@ -200,7 +205,7 @@ p.lorem_sm span {
 }
 // board and profile bg-white
 .bg_wh {
-  background: #ffff;
+  // background: #ffff;
   border-radius: 16px;
   padding: 23px;
 }
@@ -208,7 +213,7 @@ p.lorem_sm span {
 // my courses card
 .card_detail {
   padding: 10px;
-  background: #fff;
+  // background: #fff;
   border-radius: 24px;
 }
 img.pif_img {
