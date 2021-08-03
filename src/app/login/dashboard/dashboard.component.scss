@@ -7,6 +7,9 @@
   section#dashboard-bg {
     padding: 0;
   }
+  nav.navbar_bg {
+    display: none !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   img.facebook-img {
