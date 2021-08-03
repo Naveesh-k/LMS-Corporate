@@ -5,6 +5,7 @@
   --dark-input-bg-color: #ffffff;
   --dark-primary-text-color: #ffffff;
   --dark-secondary-text-color: #000000;
+  --dark-small-section-bg: #f9f9f9;
 }
 .dark-bg {
   background: var(--dark-primary-bg-color);
@@ -28,4 +29,15 @@
 .dark-side-bar-text {
   background: var(--dark-secondary-text-color);
   color: var(--dark-primary-text-color);
+}
+.dark-login-header-bg {
+  background: var(--dark-primary-bg-color);
+  color: var(--dark-primary-text-color);
+}
+.dark-login-sidebar-bg {
+  background: var(--dark-primary-card-bg-color);
+}
+.dark-small-section-bg {
+  background: var(--dark-small-section-bg);
+  color: var(--dark-secondary-text-color);
 }
