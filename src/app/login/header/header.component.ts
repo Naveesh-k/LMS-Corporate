@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorModeService } from 'src/app/service/color-mode.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  darkMode: boolean = false;
+  constructor(
+    public mode: ColorModeService // dark-light
+  ) {}
 
   ngOnInit(): void {
+    // dark-light
+    this.mode.currentMode.subscribe((res) => {
+      if (res == 'light') {
+        this.darkMode = false;
+      } else {
+        this.darkMode = true;
+      }
+    });
+    //end dark-light
   }
-
 }

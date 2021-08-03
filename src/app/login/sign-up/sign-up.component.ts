@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ColorModeService } from 'src/app/service/color-mode.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -11,8 +12,12 @@ export class SignUpComponent implements OnInit {
   registerFormSec: any = FormGroup;
   submitted = false;
   submittedSec = false;
+  darkMode: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    public mode: ColorModeService // dark-light
+  ) {}
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -29,6 +34,16 @@ export class SignUpComponent implements OnInit {
       profile: ['', [Validators.required, Validators.email]],
       acceptTerms: [false, Validators.requiredTrue],
     });
+
+    // dark-light
+    this.mode.currentMode.subscribe((res) => {
+      if (res == 'light') {
+        this.darkMode = false;
+      } else {
+        this.darkMode = true;
+      }
+    });
+    //end dark-light
   }
 
   // convenience getter for easy access to form fields

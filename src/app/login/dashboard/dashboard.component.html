@@ -4,7 +4,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-5 col-lg-4 col-sm-5 col-12">
-        <div class="bg_col">
+        <div
+          class="bg_col"
+          [ngClass]="
+            darkMode ? 'dark-login-sidebar-bg' : 'light-login-sidebar-bg'
+          "
+        >
           <h2>MASTER CAPITAL WISDOM</h2>
           <h6>What are you waiting for</h6>
           <div class="mar_top">
