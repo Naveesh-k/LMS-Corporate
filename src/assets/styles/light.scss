@@ -9,6 +9,7 @@
   --login-header-bg-color: #f5f5f5;
   --login-sidebar-bg-color: #28a0a4;
   --light-small-section-bg: #f9f9f9;
+  --light-profile-bg: #f4f4f4;
 }
 .light-bg {
   background: var(--light-primary-bg-color);
@@ -44,4 +45,7 @@
 .light-small-section-bg {
   background: var(--light-small-section-bg);
   color: var(--dark-secondary-text-color);
+}
+.light-profile-bg {
+  background: var(--light-profile-bg);
 }
