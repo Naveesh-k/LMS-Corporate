@@ -34,9 +34,8 @@
           </li> -->
           <li class="nav-item nav_li">
             <a
-              class="nav-link nav_fnt"
+              class="nav_fnt"
               [ngClass]="darkMode ? 'dark-text' : 'light-text'"
-              dark-text
               [routerLink]="'/pages/home'"
               >Explore</a
             >
@@ -44,16 +43,27 @@
 
           <li class="nav-item nav_li">
             <a
-              class="nav-link nav_fnt"
+              class="nav_fnt"
+              [ngClass]="darkMode ? 'dark-text' : 'light-text'"
               [routerLink]="'/login-module/customise-topic'"
               >Resources</a
             >
           </li>
           <li class="nav-item nav_li">
-            <a class="nav-link nav_fnt" href="#">Pricing</a>
+            <a
+              class="nav_fnt"
+              [ngClass]="darkMode ? 'dark-text' : 'light-text'"
+              href="#"
+              >Pricing</a
+            >
           </li>
           <li class="nav-item nav_li">
-            <a class="nav-link nav_fnt" href="#">Support</a>
+            <a
+              class="nav_fnt"
+              [ngClass]="darkMode ? 'dark-text' : 'light-text'"
+              href="#"
+              >Support</a
+            >
           </li>
         </ul>
         <a
