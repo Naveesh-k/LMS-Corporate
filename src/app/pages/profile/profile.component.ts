@@ -8,6 +8,7 @@ import { ColorModeService } from 'src/app/service/color-mode.service';
 })
 export class ProfileComponent implements OnInit {
   darkMode: boolean = false;
+  hide: boolean = false;
   constructor(
     public mode: ColorModeService // dark-light
   ) {}
@@ -22,5 +23,9 @@ export class ProfileComponent implements OnInit {
       }
     });
     //end dark-light
+  }
+
+  showHide() {
+    this.hide = true;
   }
 }
