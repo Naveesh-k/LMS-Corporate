@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MyCoursesComponent } from './my-courses/my-courses.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingComponent } from './setting/setting.component';
+import { DashVarComponent } from './dash-var/dash-var.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'setting', component: SettingComponent },
   { path: 'board', component: BoardComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'dash-var', component: DashVarComponent },
 ];
 
 @NgModule({

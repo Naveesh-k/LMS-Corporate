@@ -271,7 +271,7 @@ p.short_corse_p {
   a.pdr {
     padding: 17px 0 0 0;
   }
-
+   
   // --------
   .slide-1 {
     width: 153px !important;
@@ -281,3 +281,60 @@ p.short_corse_p {
   }
   // --------
 }
+ul li{
+  list-style: none;
+ 
+  
+}
+.video-list {
+  li:before {
+    content: url('assets/images/Vector.png') ;
+    position: absolute;
+    left: 17px;
+  }
+}
+.social-media{
+  
+    display:flex;
+    justify-content:space-around;
+    margin: 10px;
+    width: 190px
+
+  
+}
+
+.down-load{
+  li:after{
+    content: url('assets/images/Group 137.png') ;
+    position: absolute;
+    left: 18pc;
+  }
+}
+.num{
+  p::before{
+    content: "0.00";
+    position: absolute;
+    left: 20px;
+  }
+}
+.num{
+  p{
+    padding-left: 30px;
+
+  }
+}
+.num{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.card-body{
+  h5::after{ content: url('assets/images/CaretDownFill2.png') ;
+    position: absolute;
+    right: 20px;
+  
+  
+
+  }
+}
+
