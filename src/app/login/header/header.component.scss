@@ -1,4 +1,11 @@
 img.logo_img {
+  width: 51%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+.imyu {
+  padding: 8px 0 5px 0;
   width: 417px;
 }
 li.nav_li {
@@ -8,7 +15,7 @@ a.nav_fnt {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 400;
-  // color: #1b1c1e !important;
+  padding: 3px;
 }
 a.btn_login {
   background: #28a0a4;
@@ -18,7 +25,6 @@ a.btn_login {
   width: 89px;
 }
 nav.navbar_bg {
-  // background: #f5f5f5;
   padding: 0 32px 0 39px;
 }
 
