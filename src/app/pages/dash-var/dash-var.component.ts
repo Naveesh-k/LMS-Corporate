@@ -2,16 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ColorModeService } from 'src/app/service/color-mode.service';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss'],
+  selector: 'app-dash-var',
+  templateUrl: './dash-var.component.html',
+  styleUrls: ['./dash-var.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class DashVarComponent implements OnInit {
   darkMode: boolean = false;
-  hide: boolean = false;
   constructor(
     public mode: ColorModeService // dark-light
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     // dark-light
@@ -25,7 +24,4 @@ export class ProfileComponent implements OnInit {
     //end dark-light
   }
 
-  showHide() {
-    this.hide = true;
-  }
 }
