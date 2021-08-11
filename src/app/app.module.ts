@@ -11,9 +11,10 @@ import { FormsModule } from '@angular/forms';
 import { PagesModule } from './pages/pages.module';
 import { QueStionComponent } from '../pages/que-stion/que-stion.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { StretcherComponent } from './stretcher/stretcher.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, QueStionComponent, HomePageComponent],
+  declarations: [AppComponent, SidebarComponent, QueStionComponent, HomePageComponent, StretcherComponent],
   imports: [BrowserModule, AppRoutingModule, SlickCarouselModule, FormsModule, PagesModule],
   providers: [],
   bootstrap: [AppComponent],
