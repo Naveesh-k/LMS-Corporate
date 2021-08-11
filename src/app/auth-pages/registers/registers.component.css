@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-bg {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../../../assets/images/Group-789.png);
+  background-position: center;
+  background-size: cover;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.box label {
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.form-container {
+  position: absolute;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 #000;
+  border-radius: 15px;
+  top: 10vh;
+  width: 100%;
+}
+
+.imge img {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+}
+
+.agree a {
+  color: #28A0A4;
+}
+
+.box label {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: default;
+}
+
+.dot input[type=radio] {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.new-form .form-group {
+  margin-top: 5px;
+}
+
+.new-form input, .new-form select {
+  border-radius: 10px;
+}
+
+.new-form label, .new-form select {
+  margin-left: 10px;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+button[type=submit] {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #28A0A4;
+  margin-top: 20px;
+}
+
+input, select {
+  padding: 20px;
+  border-radius: 10px;
+}

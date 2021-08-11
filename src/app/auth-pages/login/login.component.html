@@ -1,38 +1,66 @@
-<body>
-    <div class="hera">
-          </div>
-         <div class="container-fluid bg" >
-             <div class="row justify-content-center">
-                 <div class="col-12 col-sm-6 col-md-3">
-                   <form class="form-container">
+
+<div class="container-fluid form-bg" >
+   <div class="row justify-content-center">
+       <div class="col-12 col-sm-6 col-md-5">
+        <div class="imge">
+            <img  src="assets/images/form logo.png ">
+        
+        </div>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form-container p-4">
+                   
+                      
                        <div class="form-group">
-                         <label for="exampleInputEmail1">Email address</label>
-                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        
-                       </div>
-                       <div class="form-group">
-                         <label for="exampleInputPassword1">Password</label>
-                         <input type="password" class="form-control" id="exampleInputPassword1">
-                       </div>
-                       <div class="form-group">
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eum atque iste in nemo </p>
-                         </div>
-                       <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                       </div>
-                       <button type="submit" class="btn btn-primary btn-block">Agree & jion</button>
-                     </form>
-   
+               <label for="exampleInputEmail1">Email or phone number</label>
+                            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <div *ngIf="f.email.errors.required">Email is required</div>
+                                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                            </div>
+                        </div>
+                   
+                    
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password (6 or more characters)</label>
+                            <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                <div *ngIf="f.password.errors.required">Password is required</div>
+                                <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                            </div>
+                        </div>
+                        <div class="agree">
+                            <p>By clicking Agree & Join, you agree to the LinkedIn <a href="#">User Agreement, Privacy Policy,</a> and <a href="#">Cookie Policy.</a></p>
+                          </div>
+                      <!--  <div class="form-group col">
+                            <label>Confirm Password</label>
+                            <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+                            <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                 <div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                                <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div> 
+                            </div>
+                        </div>-->
+                 
+                     <button type="submit" class="btn btn-primary btn-block">Agree & jion</button>
+                 <div class="line">
+                     <img src="assets/images/Vector 2.png">or<img src="assets/images/Vector 2.png">
                  </div>
-   
-             </div>
-   
-         </div>
-         <div>
-             <ul>
-                 <li>2020</li>
+             <div class="soical-media ml-5">
+
+                <a ><img src="assets/images/facebook (1) 1.png"></a>
+                <a><img src="assets/images/search 2.png"></a>
+                <a><img src="assets/images/image 1.png"></a>
+              </div>
+
+              <div class="signup-link">
+                  Already on BD TECH? <a routerLink="/auth-module/registers">Sign in</a>
+              </div>
+                    
+                </form>
                
-             </ul>
-   
-         </div>
+            </div>
+           
+        </div>
+       
+           <!-- -------------------------------------  -->
+          
+
+           

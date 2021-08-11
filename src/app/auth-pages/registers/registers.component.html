@@ -1,0 +1,248 @@
+<div class="form-bg">
+
+  <a class="btn btn-primary" (click)="sShow()">Second Page</a> &nbsp;&nbsp;
+  <a class="btn btn-primary" (click)="tShow()">Third Page</a> &nbsp;&nbsp;
+  <a class="btn btn-primary" (click)="fShow()">First Page</a> &nbsp;&nbsp;
+  <section *ngIf="!showF">
+    <div class="container-fluid ">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-5">
+          <div class="imge">
+            <img src="assets/images/form logo.png ">
+          </div>
+         
+          <form [formGroup]="signForm" (ngSubmit)="onSubmit()" class="form-container p-4">
+
+            <h4>Just a few details and we are good to go!</h4>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email or phone number</label>
+              <input type="text" formControlName="email" placeholder="alma.lawson@example.com" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">FastName</label>
+              <input type="text" formControlName="email" placeholder="Alma" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                  <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" formControlName="lastName" placeholder="Lawson" class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                  <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Profile</label>
+              <input type="text" formControlName="lastName" placeholder="Upload Profile" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+              <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required">profile Name is required</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Agree & jion</button>
+
+
+
+
+          </form>
+           
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!------------------Choose the following through--------------------->
+
+  <section *ngIf="showS">
+  <div class="container-fluid ">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-5">
+          <div class="imge">
+             <img  src="assets/images/form logo.png ">
+            </div>
+    
+        <form [formGroup]="signForm" (ngSubmit)="onSubmit()" class="form-container p-4">
+           
+              <h5 class="head-4 pb-2 pl-2">Choose the following through</h5>
+             <div class="box">
+              <label for="option1" class="option1">
+                <div class="dot"> <input type="radio" name="select" id="option1"> </div>
+                <div class="text">Do you want to Buy a Business?
+                  
+                </div>
+              </label>
+              <label for="option2" class="option2">
+                <div class="dot">
+                  <input type="radio" name="select" id="option2">
+                </div>
+                <div class="text">Sell a Business? 
+                </div>
+              </label>
+              <label for="option3" class="option3">
+                <div class="dot"> <input type="radio" name="select" id="option3"></div>
+                <div class="text">Look for Partnerships?</div>
+              </label>
+              <label for="option4" class="option4">
+                <div class="dot">
+                  <input type="radio" name="select" id="option4">
+                </div>
+                <div class="text">Looking for a Vendor or Supplier?
+                </div>
+              </label>
+             </div>
+                            <div class="new-form">
+                                 <div class="form-group">
+                                  <label for="exampleInputEmail1">Region</label>
+                                 <select formControlName="title" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }">
+                                  <option value=""></option>
+                                  <option value="an">1</option>
+                                  <option value="vi">2</option>
+                                  <option value="Ms">3</option>
+                                  <option value="M4">4</option>
+                              </select>
+                              <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                                  <div *ngIf="f.title.errors.required">Title is required</div>
+                              </div>   
+                              </div>     
+
+
+                                  
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Quantum of deal</label>
+                                             <input type="text" formControlName="email" 
+                                             
+                                             class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                                 <div *ngIf="f.email.errors.required">Quantum  is required</div>
+                                                 <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                             </div>
+                                         </div>
+                                         <div class="form-group">
+                                          <label for="exampleInputEmail1">Type of Deal</label>
+                                                       <input type="text" formControlName="email" 
+                                                       
+                                                       class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                                       <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                                           <div *ngIf="f.email.errors.required">Type of Deal  is required</div>
+                                                           <div *ngIf="f.email.errors.email">Type of Deal</div>
+                                                       </div>
+                                                   </div>
+                                                  </div>
+             <button type="submit" class="btn btn-primary btn-block">Agree & jion</button>
+        
+
+         
+          
+             
+        </form>
+       
+    </div>
+   
+   </div>
+   </div>
+  </section>
+
+
+  <!-------------------Buy/Sell/Trade Marketplace------------------------->
+
+
+  <section *ngIf="showT">
+
+  <div class="container-fluid ">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-5">
+          <div class="imge">
+             <img  src="assets/images/form logo.png ">
+            </div>
+    
+        <form [formGroup]="signForm" (ngSubmit)="onSubmit()" class="form-container p-4">
+           
+              <h4 class="buy pl-5 ml-5">Buy/Sell/Trade Marketplace</h4>
+               <div class="form-group">
+       <label for="exampleInputEmail1">Project In Charge</label>
+                    <input type="text" formControlName="email" 
+                    
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Project is required</div>
+                        <div *ngIf="f.email.errors.email">Project must be a valid Project address</div>
+                    </div>
+                </div>
+           
+            
+                <div class="form-group">
+                  <label>Type of Opportunity</label>
+                <select formControlName="title"       class="form-control" [ngClass]="{ 'is-invalid':     submitted && f.title.errors }">
+                  <option value="Buy">Buy</option>
+                  <option value="number">1</option>
+                  <option value="cd">2</option>
+                  <option value="Ef">3</option>
+                  <option value="Ms">4</option>
+              </select>
+              <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                  <div *ngIf="f.title.errors.required">Title is required</div>
+              </div>
+        
+
+              <div class="form-group">
+                <label>Description</label>
+                <input type="text" formControlName="lastName" 
+                
+                class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastName.errors.required">Description is required</div>
+                </div>
+            </div>
+        </div>
+
+                <div class="form-group">
+                    <label>Contact Details</label>
+                    <input type="text" formControlName="lastName" 
+                   
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                    <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.errors.required">Contact Details Name is required</div>
+                    </div>
+                </div>
+             <button type="submit" class="btn btn-primary btn-block">Agree & jion</button>
+        
+
+    
+            
+        </form>
+       
+    </div>
+   
+</div>
+</div>
+
+
+
+
+
+
+  
+</section>
+
+
+
+
+
+
+
+
+
+</div>
