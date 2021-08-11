@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-bg {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../../../assets/images/Group-789.png);
+  background-position: center;
+  background-size: cover;
+  overflow-y: hidden;
+  position: relative;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+.form-container {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #000;
+  border-radius: 10px;
+  top: 15vh;
+}
+
+.imge img {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.agree a {
+  color: #28A0A4;
+}
+
+.agree p {
+  font-size: small;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.soical-media {
+  justify-content: space-around;
+  display: flex;
+  width: 300px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.soical-media a img {
+  padding-left: 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+button[type=submit] {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #28A0A4;
+  margin-top: 20px;
+}
+
+.signup-link {
+  margin: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.line img {
+  width: 45%;
+}
+
+.line {
+  color: gray;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #28A0A4;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+}
