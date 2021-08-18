@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {StretcherComponent } from './stretcher.component';
+import { PeopleListComponent } from './people-list.component';
 
-describe('StretcherComponent', () => {
-  let component: StretcherComponent;
-  let fixture: ComponentFixture<StretcherComponent>;
+describe('PeopleListComponent', () => {
+  let component: PeopleListComponent;
+  let fixture: ComponentFixture<PeopleListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StretcherComponent ]
+      declarations: [ PeopleListComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StretcherComponent);
+    fixture = TestBed.createComponent(PeopleListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
