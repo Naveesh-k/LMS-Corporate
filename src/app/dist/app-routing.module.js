@@ -12,11 +12,13 @@ var router_1 = require("@angular/router");
 var home_page_component_1 = require("./home-page/home-page.component");
 var dashboard_component_1 = require("./login/dashboard/dashboard.component");
 var stretcher_component_1 = require("./stretcher/stretcher.component");
+var chat_box_component_1 = require("./chat-box/chat-box.component");
 var routes = [
     { path: '', component: dashboard_component_1.DashboardComponent },
     // { path: '', component: HomePageComponent},
     { path: 'home-page', component: home_page_component_1.HomePageComponent },
     { path: 'stretcher', component: stretcher_component_1.StretcherComponent },
+    { path: 'chatbox', component: chat_box_component_1.ChatBoxComponent },
     {
         path: 'login-module',
         loadChildren: function () {

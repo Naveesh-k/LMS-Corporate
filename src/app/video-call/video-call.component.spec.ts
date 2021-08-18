@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {StretcherComponent } from './stretcher.component';
+import { VideoCallComponent } from './video-call.component';
 
-describe('StretcherComponent', () => {
-  let component: StretcherComponent;
-  let fixture: ComponentFixture<StretcherComponent>;
+describe('VideoCallComponent', () => {
+  let component: VideoCallComponent;
+  let fixture: ComponentFixture<VideoCallComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StretcherComponent ]
+      declarations: [ VideoCallComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StretcherComponent);
+    fixture = TestBed.createComponent(VideoCallComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
